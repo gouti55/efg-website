@@ -1,7 +1,7 @@
 <div class="logo">
   <div class="logHead">
     <!-- <img src="./assets/img/olam_icon.png" /> -->
-    <img src="./assets/img/Logo_Olam.svg" (click)="navigateToHome()"/>
+    <img src="./assets/img/efg_logo.png" (click)="navigateToHome()"/>
   </div>
   <a class="simple-text logo-normal">
   </a>
@@ -17,7 +17,7 @@
       <a *ngIf="!menuItem.children.length" class="parent" [routerLink]="[menuItem.path]">
         <i class="tim-icons dot {{ menuItem.icon }}"></i>
         <span class="dot"></span>
-        <p style="font-size: 12px;">{{ menuItem.title }}</p>
+        <p style="font-size: 20px;">{{ menuItem.title }}</p>
       </a>
       <a *ngIf="menuItem.children.length" >
         <span class="dot"></span>

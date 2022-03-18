@@ -466,7 +466,7 @@ margin-left: 25px;
 .main-panel {
   position: relative;
   float: right;
-  width: $full-width;
+  width: 80%;
   min-height: 100vh;
   border-top: 2px solid $primary;
   // background: linear-gradient($background-black, $background-states-black);
@@ -537,7 +537,7 @@ margin-left: 25px;
       }
 
       .sidebar{
-        width: 80px;
+        width: 20%;
 
         .sidebar-wrapper{
           width: 100% !important;
@@ -669,7 +669,7 @@ height: 380px
   position: fixed;
   display: block;
   top: 0;
-  height: 100%;
+  height: 800%;
   width: 260px;
   right: auto;
   left: 0;
@@ -688,7 +688,7 @@ height: 380px
 }
 
 .main-panel {
-  width: 100%;
+  width: 80%;
     .content {
     padding-left: 30px;
   }
@@ -742,7 +742,7 @@ height: 380px
 
 #bodyClick{
     height: 100%;
-    width: 100%;
+    width: 80%;
     position: fixed;
     opacity: 1;
     top: 0;
