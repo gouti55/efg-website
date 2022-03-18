@@ -1,0 +1,43 @@
+<div class="logo">
+  <div class="logHead">
+    <!-- <img src="./assets/img/olam_icon.png" /> -->
+    <img src="./assets/img/Logo_Olam.svg" (click)="navigateToHome()"/>
+  </div>
+  <a class="simple-text logo-normal">
+  </a>
+</div>
+<div class="sidebar-wrapper"> 
+  <ul class="nav">
+    <li
+      routerLinkActive="active" 
+      *ngFor="let menuItem of menuItems"
+      class="{{ menuItem.class }} nav-item parent"
+      style="margin-top: -10px !important;"
+    >
+      <a *ngIf="!menuItem.children.length" class="parent" [routerLink]="[menuItem.path]">
+        <i class="tim-icons dot {{ menuItem.icon }}"></i>
+        <span class="dot"></span>
+        <p style="font-size: 12px;">{{ menuItem.title }}</p>
+      </a>
+      <a *ngIf="menuItem.children.length" >
+        <span class="dot"></span>
+        <i class="tim-icons  {{ menuItem.icon }}" *ngIf="menuItem.icon"></i>
+        <img [src]="menuItem.img" *ngIf="menuItem.img" />
+        <p style="font-size: 12px;">{{ menuItem.title }}</p>
+        <li
+          routerLinkActive="active"
+          *ngFor="let children of menuItem.children"
+          class="{{ children.class }} nav-item child"
+          style="margin: -5px -25px 0px 10px !important;"
+        >
+          <a [routerLink]="[children.path]">
+            <i class="tim-icons  {{ children.icon }}" *ngIf="children.icon"></i>
+            <img [src]="children.img" *ngIf="children.img" />
+            <p style="font-size: 12px;">{{ children.title }}</p>
+            
+          </a>
+        </li>
+      </a>
+    </li>
+  </ul>
+</div>

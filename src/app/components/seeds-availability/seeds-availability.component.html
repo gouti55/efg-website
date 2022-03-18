@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="custom-table">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th class="text-center">SEED ID</th>
+              <th class="text-center">SEED Name</th>
+              <th class="text-center">AVAILABILITY</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr *ngFor="let data of seeds; let i=index" (click)="viewData(data.seedId)">
+              <td class="kmid">
+                <div class="showFirsttabledata"></div> {{data.seedId ? data.seedId : '-'}}
+              </td>
+              <td class="kmname ellipsis" [title]="data.seedName ? data.seedName : ''"><span>{{data.seedName ? data.seedName : '-'}}</span>
+              </td>
+              <td class="kmname ellipsis" [title]="data.quantity ? data.quantity : ''"><span>{{data.quantity ? data.quantity : '-'}}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</div>

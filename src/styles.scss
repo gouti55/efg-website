@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html {
+    // --scrollbarBG: #CFD8DC;
+    // --thumbBG: #90A4AE;
+    --scrollbarBG: #efefef;
+    --thumbBG: #00acc1;
+  }
+  *::-webkit-scrollbar {
+    width: 9px;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 2.5px solid var(--scrollbarBG);
+  }
+
+  div.btn-light{
+    color: #525f7f !important;
+  }
+  .btn-light.bg-primary {
+    background: #0B4B52 !important;
+    color: white !important;
+  }
+
+  .mat-form-field-appearance-fill .mat-form-field-flex{
+    padding: 0px !important;
+  }
+
+  .mat-form-field-label-wrapper{
+    left: 7px !important;
+    top: -0.5em !important;
+  }
+
+  .mat-form-field-appearance-fill .mat-form-field-flex{
+    border-radius: 3px !important;
+  }
+  .mat-form-field-infix{
+    border-top: .68em solid transparent !important;
+  }
+  .mat-select-arrow{
+    margin-top: 9px !important;
+    margin-right: 8px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .mat-form-field-wrapper{
+    padding-bottom: 5px !important;
+  }
+
+  .mat-form-field-underline{
+    bottom: unset !important;
+  }
+
+  .mat-select-panel{
+    padding: 1%;
+  }
+
+  .mat-select-value-text{
+    padding-left: 6px !important;
+    padding-top: 5px !important;
+  }
+  .mat-form-field-appearance-fill .mat-form-field-infix{
+    padding: .25em 0 .5em 0 !important;
+  }
+  .mat-sort-header-arrow {
+    opacity: 1 !important;
+    margin: 4px 0px 0px 6px !important;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: transparent !important;
+  }
+  .mat-option-text{
+    font-size: 12px;
+  }
+
+  .sucess-bar{
+    background-color: rgba(79, 243, 188, 0.829);
+    color: black;
+  }
+
+  .error-bar{
+    background-color: rgb(233, 104, 104);
+    color: white;
+  }
+
+
+th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type{
+  padding-left: 24px !important;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
+  padding-left: 10px !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-dialog-container{
+  padding: 0px !important;
+}

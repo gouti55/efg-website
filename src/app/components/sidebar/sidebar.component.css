@@ -1,0 +1,11 @@
+.w-80{
+    width: 80% !important;
+    /* margin-top: 63px; */
+}
+
+.logHead {
+    width: 92% !important;
+    text-align: center;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
