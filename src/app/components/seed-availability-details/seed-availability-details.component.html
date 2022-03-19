@@ -1,3 +1,22 @@
 <div class="content">
-    <p>seed-availability-details works!</p>
+    <div class="col-12">
+        <div class="row bg-white p-1 mb-3 survey-details">
+          <div class="details-product">
+            <label>Seed ID</label>
+            <div class="lab-val text-truncate" [title]="selectedSeed.seedId"> {{selectedSeed.seedId}} </div>
+          </div>
+          <div class="details">
+            <label>Seed Name</label>
+            <div class="lab-val text text-truncate" [title]="selectedSeed.seedName"> {{selectedSeed.seedName}} </div>
+          </div>
+          <div class="details-product">
+            <label>Available Quantity </label>
+            <div class="lab-val text-truncate" [title]="selectedSeed.quantity"> {{selectedSeed.quantity}} </div>
+          </div>
+          <div class="details-product">
+            <label>Required Per One Cent</label>
+            <div class="lab-val text-truncate" [title]="selectedSeed.requiredPerCent"> {{selectedSeed.requiredPerCent}} </div>
+          </div>
+        </div>
+      </div>
 </div>

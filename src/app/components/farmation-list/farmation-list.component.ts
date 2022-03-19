@@ -52,7 +52,7 @@ export class FarmationListComponent implements OnInit {
   }
 
   navigateToFarmationDetail(id: any) {
-    this.router.navigate(['/farmation/', id]);
+    this.router.navigate(['/farmation', id]);
   }
 
 }

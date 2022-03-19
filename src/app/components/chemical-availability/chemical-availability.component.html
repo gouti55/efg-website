@@ -1,1 +1,91 @@
-<p>chemical-availability works!</p>
+<div class="content">
+    <div class="row">
+        <!-- <ng-container>
+            <div class="col-md-4 col-sm-6 col-12 mb-3" *ngFor="let loader of [1,2,3]">
+                <div class="row card-ui m-0 loaders">
+                    <div class="col-md-9 col-sm-9 col-12 p-0">
+                        <div class="row m-0 pb-10px">
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-2">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-12 pl-0 chart-load">
+                        <div class="chart-loader animate-pulse"></div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-12 p-0 pt-2 pb-2">
+                        <div class="row m-0">
+                            <div class="col-2 text-center">
+                                <div class="bg-light-gray animate-pulse icon-loader"></div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light-gray animate-pulse h-md w-90 mb-1"></div>
+                                <div class="bg-light-gray animate-pulse h-sm w-80"></div>
+                            </div>
+                            <div class="col-3 pl-0">
+                                <div class="btn-loader bg-light-gray animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container> -->
+        <ng-container >
+            <!-- | filter: searchText: ['fertilizerId','fertilizerName'] | slice:pageStart:pageEnd; -->
+            <div class="col-md-4 col-sm-6 col-12 mb-3" *ngFor="let fertilizer of fList">
+                <div class="row card-ui m-0" >
+                    <div class="col-md-9 col-sm-9 col-12 p-0">
+                        <div class="row m-0 pb-10px">
+                            <div class="col-md-6 col-sm-6 pr-0 col-6 pb-1">
+                                <label class="label">fertilizer ID</label>
+                                <div class="text text-truncate"
+                                    [title]="fertilizer?.fId ? fertilizer?.fId:''"> {{fertilizer?.fId ?
+                                    fertilizer?.fId : '-'}} </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6 pb-1">
+                                <label class="label">fertilizer Name</label>
+                                <div class="text text-truncate" [title]="fertilizer?.fName ? fertilizer?.fName :''">
+                                    {{fertilizer?.fName ?
+                                    fertilizer?.fName :'-'}}</div>
+                            </div>
+                            <!-- <button class="btn btn-view btn-sm btn-rounded"
+                                    (click)="navigateToFarmationDetail(fertilizer?.fertilizerId)">
+                                    View
+                                    <img class="pl-1" [src]="fertilizer?.image ? fertilizer?.image :''">
+                                </button> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-12 col-12" *ngIf="fList?.length === 0">
+                <h3 class="text-center">No Data Found</h3>
+            </div>
+        </ng-container>
+    </div>
+</div>
